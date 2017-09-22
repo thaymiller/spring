@@ -24,8 +24,9 @@ public class HelloController {
 	private static final String SEARCH_FORM = "/search/form/index";
 	
 	@RequestMapping("/hello/controller")
-	public ModelAndView hello() {
-		String msg = "Executando a lógica com Spring MVC";
+	public ModelAndView helloaç() {
+		final String msg = "Executando a lógica com Spring MVC";
 		return new ModelAndView("/hello/view", "msg", msg);
 	}
+	
 }
